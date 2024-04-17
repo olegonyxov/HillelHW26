@@ -2,7 +2,6 @@ document.getElementById('openModalBtn').addEventListener('click', function() {
   $('#myModal').modal('show');
 });
 
-// Показать или скрыть алерт при нажатии на кнопку
 document.getElementById('alertBtn').addEventListener('click', function() {
   const alertDiv = document.getElementById('myAlert');
   if (alertDiv.style.display === 'none') {
@@ -12,7 +11,6 @@ document.getElementById('alertBtn').addEventListener('click', function() {
   }
 });
 
-// Получение даты рождения от пользователя и преобразование формата
 const userBirthday = prompt('Введите дату вашего рождения в формате "YYYY-MM-DD":');
 
 if (moment(userBirthday, 'YYYY-MM-DD', true).isValid()) {
