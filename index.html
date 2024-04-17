@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW26</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap and Moment.js Example</title>
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    
+
+<button type="button" class="btn btn-primary" id="openModalBtn" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" title="текст Tooltip">
+  показать окно
+</button>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">окно</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Делай анжиманя
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-info" id="alertBtn">Показать алерт</button>
+
+<div class="alert alert-dismissible fade show" role="alert" id="myAlert" style="display: none;">
+  Алерт. <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+
+<script src="./node_modules/moment/min/moment.min.js"></script>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./js/app.js"></script>
+
 </body>
 </html>
