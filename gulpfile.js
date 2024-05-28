@@ -1,6 +1,6 @@
 const gulp = require('gulp')
 
-const BUILD_FOLDER = "./dist";
+const BUILD_JS_FOLDER = "./dist/js";
 const SRC_JS_FOLDER = "./src/js/*.js";
 const BUILD_CSS_FOLDER = "./dist/styles";
 const SRC_CSS_FOLDER = "./src/styles/*.css";
@@ -9,7 +9,7 @@ const SRC_CSS_FOLDER = "./src/styles/*.css";
 
 
 function watcher() {
-    return gulp.watch(SRC_JS_FOLDER, copyJS)
+    return gulp.watch(SRC_JS_FOLDER, copyJs, SRC_CSS_FOLDER, copyCss)
 }
 
 function copyJs () {
@@ -20,4 +20,4 @@ function copyCss () {
     return gulp.src(SRC_CSS_FOLDER)
         .pipe(gulp.dest(BUILD_CSS_FOLDER))
 }
-gulp.task('default', gulp.series(copyJs, watcher));
+gulp.task('default', gulp.series(copyJs, copyCss, watcher));
