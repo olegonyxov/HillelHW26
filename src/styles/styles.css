@@ -1,0 +1,7 @@
+.main { 
+    height: 100vh;
+    background: linear-gradient(white,lightblue,rgb(8, 106, 172)) ;
+}
+.alert {
+    background: linear-gradient(to bottom, white, lightcoral, red);
+}
