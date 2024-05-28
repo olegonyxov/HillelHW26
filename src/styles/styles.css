@@ -6,17 +6,3 @@
     background: linear-gradient(to bottom, white, lightcoral, red);
 }
 
-
-/* function watcher() {
-    return gulp.watch(SRC_JS_FOLDER, copy)
-}
-
-function copyJs () {
-    return gulp.src(SRC_JS_FOLDER)
-        .pipe(gulp.dest(BUILD_JS_FOLDER));
-}
-function copyCss () {
-    return gulp.src(SRC_CSS_FOLDER)
-        .pipe(gulp.dest(BUILD_CSS_FOLDER))
-}
-gulp.task('default', gulp.series(copyJs, watcher)); */
